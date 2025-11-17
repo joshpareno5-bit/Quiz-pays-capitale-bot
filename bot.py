@@ -14,7 +14,6 @@ from telegram import (
     Update, 
     ReplyKeyboardMarkup, 
     KeyboardButton,
-    MenuButtonCommands,
     ReplyKeyboardRemove
 )
 from telegram.ext import (
@@ -157,7 +156,6 @@ async def start(update: Update, context: CallbackContext) -> int:
         f"🏆 <i>Meilleur score (Survie) : {best_score}</i>"
     )
     
-    # Configurer le menu de commandes
     await context.bot.set_my_commands([
         ("start", "Démarrer le bot"),
         ("help", "Afficher l'aide"),
