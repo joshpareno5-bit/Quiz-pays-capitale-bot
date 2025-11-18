@@ -37,7 +37,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # --- Données des pays et capitales ---
-[
+COUNTRIES_DATA = [
     # // Afrique
     {"continent": "Afrique", "country": "Algérie", "capital": "Alger", "population": 43},
     {"continent": "Afrique", "country": "Angola", "capital": "Luanda", "population": 33},
